@@ -1,0 +1,2 @@
+script:
+  - curl -H "Content-Type: application/json" --data '{"build": true}' -X POST https://registry.hub.docker.com/u/rhuan/jenkins-docker/trigger/54653d33-b4ca-474c-a4f5-481ded4cb8b6/
