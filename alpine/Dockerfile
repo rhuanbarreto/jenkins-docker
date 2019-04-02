@@ -6,7 +6,7 @@ ARG user=root
 ARG group=root
 
 RUN echo http://dl-cdn.alpinelinux.org/alpine/edge/community >> /etc/apk/repositories && \
-    apk -U add docker py-pip
+    apk -U --no-cache add docker py-pip openssl-dev libffi-dev
 
 RUN pip install docker-compose
 
