@@ -6,9 +6,7 @@ ARG user=root
 ARG group=root
 
 RUN echo http://dl-cdn.alpinelinux.org/alpine/edge/community >> /etc/apk/repositories && \
-    apk -U add docker py-pip
-
-RUN pip install docker-compose
+    apk -U add docker
 
 RUN /usr/local/bin/install-plugins.sh blueocean
 
